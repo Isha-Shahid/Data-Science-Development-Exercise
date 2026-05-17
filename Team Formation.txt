@@ -1,0 +1,61 @@
+Team Name:  G-10
+
+Elected team leader name:    Saffa Amar Kiani
+
+Meeting schedule: Zoom, 2 hours on Saturdays at 10:00 pm
+Communication and collaboration tools: WhatsApp, Zoom, Github, Trello
+Group rules.
+1 Tools: Use WhatsApp, Teams, Zoom, and Trello for communication.
+
+2 Task Management: Update Trello with progress regularly.
+
+3 Meeting Notice: Inform the leader 24 hours in advance if you can’t attend.
+
+4 Response Time: Reply to group messages within 48 hours.
+
+5 Deadlines: Complete assigned tasks before the deadline.
+
+6 Conflict Resolution: Resolve disputes by majority vote.
+
+7 Code Collaboration: Use GitHub for sharing and reviewing code.
+
+8 File Storage: Use Google Drive for document sharing.
+
+9 Equal Participation: Ensure fair contribution from all members.
+
+10 Respect: Communicate respectfully and support team members.
+
+useful skills of team members.
+Esha: I have a good understanding of Python and C++, and strong skills in database management and querying i.e. Postgres, MongoDB, SQL server, MySQL, etc. I can efficiently handle data and write optimized queries.
+
+Aiza: I am skilled in programming, with a strong foundation in various languages i.e. python and Java, allowing me to create efficient and scalable solutions. In web development, I specialize in both front-end and back-end technologies, building dynamic, responsive websites. Additionally, I excel in writing & research, conducting in-depth investigations, and producing clear, well-structured content.
+
+Humera: I am good at managing databases such as SQL Postgres and MongoDB, I have a good understanding of HTML CSS design.
+
+Abdullah: I am experienced in design and quality assurance. Skilled in databases, technical writing, and team management.
+
+Ayesha: I have a strong grasp of databases, including SQL queries and data organization. I also excel in writing and research, effectively analyzing information, and structuring reports concisely.
+
+Saffa:  Skilled in programming like Python, database management (PostgreSQL, MongoDB, SQL Server), and the ability to design UI/UX visually appealing designs. Experienced in software development, Git usage, and quality assurance. Strong skills in writing, research, leadership, team management, presenting, and data organization.
+
+responsibilities outside of study.
+Esha: I am currently working as CSR at a US-based logistics company, where I handle client interactions, resolve inquiries, and ensure smooth logistics operations. In addition, I serve as a Computer Science teacher at a private school, where I educate students on fundamental programming concepts, problem-solving, and database management, helping them build a strong technical foundation.
+
+Aiza: I am running an NGO apart from my studies, where I have to initiate ideas to help people in need. It focuses on many objectives like providing food, and clothing and introducing ideas to make access to education easier for those who cannot afford it.
+
+Abdullah: I work part-time in email marketing for Underground and as an SEO technical writer for Independent News UK.
+
+Ayesha: I manage social media business accounts for a family member, overseeing content creation, audience engagement, and overall digital presence.
+
+Humera: I do freelance as a web designer, where I create user-friendly websites for clients. I use Fiverr.
+
+Saffa: Outside of my studies, I work on independent projects to practice and enhance my skills, including programming, software development, AI, and database management.
+
+Adjusting working practices to support members with responsibilities.
+Our meetings are flexible and can be rescheduled if someone is unavailable. We also hold multiple meetings per week if needed. Use WhatsApp chat for any queries. Assign the task to an available team member who has finished their work or is willing to assist. Additionally, after every meeting, we share the meeting summary in the group chat so the absentees can be aware. Regularly share meeting recaps, updates, and key information for clear communication.
+
+unavailability till the assignment deadline.
+All team members will be fasting during the month of Ramadan, which is expected to begin on March 1, 2025, and end on March 30, 2025. Although we will be fasting, we will remain available for the assignment during this period. Additionally, we will be unavailable from March 30 to April 3, 2025, due to the Eid ul-Fitr holidays. Please note that the exact dates of Eid may vary depending on the sighting of the moon.
+
+adjusting work practices for unavailable members.
+The group will adjust its working practices by providing meeting recaps, flexible scheduling, and remote participation options. Tasks can be reassigned temporarily, and clear communication through emails or group chats will ensure members stay informed. Assign the task to an available team member who has finished their work or is willing to assist. Additional support will be offered to help manage workloads effectively.
