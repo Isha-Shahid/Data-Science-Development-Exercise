@@ -1,0 +1,138 @@
+Introduction
+
+ 
+
+Purpose of the Reflection:
+ 
+
+The purpose of this reflection report  is to reflect on my experience as Developer A in our team project. I will share how I helped my teammates both in learning and team bonding, and how they helped me in return. This reflection provides real examples of how we worked together with kindness and support, creating a positive and respectful team environment. It also shows how teamwork helped me grow in both technical skills and personal development.
+
+ 
+
+Reflective Account:
+
+ 
+
+2.1     How You Helped Others:
+
+ 
+
+Throughout the project, I took an active role in supporting my teammates, not only from a technical perspective but also by fostering a positive and collaborative team environment. One of my early contributions involved assisting our UI designers in shaping the fundamental structure of the application. I helped them brainstorm the number of pages needed, decide on the layout, and identify key features that would enhance user experience. Together, we worked on mapping out dashboards tailored to different user types, such as patients and health workers, ensuring that each had the relevant tools and information presented clearly.
+
+In terms of technical guidance, I provided considerable support to my team members who were less experienced with Flask. I explained how a Flask application is structured, how routing works, and how templates are linked with backend logic. Many of my peers were unfamiliar with integrating a database, so I walked them through the process of connecting SQLite with the Flask app. I demonstrated how to create and manage database tables, how to perform CRUD operations, and how to use Flask’s built-in support for SQLAlchemy to streamline queries.
+
+Additionally, Abdullah and I played a key role in enhancing the team’s understanding of machine learning. As our project incorporated a diagnostic ML model, I explained how it was built, trained, and integrated into the application. I broke down the logic behind the algorithms we used, explained the role of features and labels in classification, and showed how model predictions were utilized within our system. This helped demystify the AI component for those who were initially overwhelmed.
+
+During the testing phase, I actively collaborated with the team to develop test cases for both frontend and backend functionalities. I helped create meaningful test scenarios that aligned with our Flask app's features and supported others in executing and refining these tests. My goal was to ensure our application met all requirements and functioned smoothly from end to end.
+
+I encouraged a mindset of continuous improvement and made sure everyone felt comfortable sharing and receiving constructive criticism. Whenever any team member faced a problem, we would immediately jump on Microsoft Teams and work through it together until we found a solution. This habit helped build a strong sense of teamwork and ensured no one felt stuck or unsupported.
+
+I also helped my teammates become comfortable with version control using GitHub. I taught them how to clone repositories, create branches, commit changes, and resolve merge conflicts. This not only improved the efficiency of our workflow but also reduced the anxiety of working in a shared codebase.
+
+As the project neared completion, I assisted the team leader in integrating all components and ensuring proper documentation. I highlighted everyone’s contributions and encouraged discussions to improve the final report before submission. I focused on fostering a supportive environment, ensuring no one was left behind. I checked in with teammates, offered guidance, and encouraged progress. By sharing knowledge and staying approachable, I aimed to contribute to both the project’s success and the team’s growth.
+
+ 
+
+ 
+
+ 
+
+2.1     How You Were Helped by Others:
+
+ 
+
+One of the most valuable aspects of this project was the sense of support and collaboration within our team. From the beginning, everyone made an effort to create a friendly and inclusive environment. Before our weekly meetings, we often spent a few minutes casually talking and checking in on each other’s families and personal lives. These small moments helped build a strong team bond and made working together more enjoyable and comfortable.
+
+During the development of the web application, my teammates were always ready to provide feedback on my work. Whenever I implemented a new feature or made UI changes, I would share it with the group to ask whether it looked good, met their expectations, or if anything else could be improved. Ayesha gave valuable feedback that improved the usability of the pages and ensured the design met non-functional requirements. Her insights helped refine the overall user experience of our web app.
+
+The prototype created by Saffa and Humera was a constant reference point for implementation. They regularly reviewed our UI and made sure it stayed consistent with the finalized design. Their input ensured that the web app looked cohesive and visually aligned with our plan.
+
+When we were deciding which machine learning algorithm to use, all team members contributed by comparing options and suggesting the most suitable one for our dataset. Their collective input helped us select an effective model for accurate predictions.
+
+In terms of implementation, Abdullah was incredibly helpful. He worked closely with me to develop features and resolve issues. When I faced a stubborn pop-up error, Abdullah and I stayed on Microsoft Teams together until we found a solution. Thanks to that collaboration, we were able to make our web page function exactly as intended and match our prototype expectations.
+
+For the testing phase, Saffa, Humera, Ayza, and Ayesha all played a crucial role. They ran both manual and unit tests, reported issues, and helped verify that each feature worked as expected. Their feedback was essential in polishing the final version of the app.
+
+Ayza and Ayesha contributed significantly to refining our user stories, helping ensure they were clear, complete, and aligned with our project goals. Saffa and Ayza also helped me with my final implementation video, guiding me on how to present the features effectively. Saffa and Abdullah supported me in writing about my contributions for the final project report.
+
+Throughout the project, all team members made sure that if any amendments were needed in the design or user stories, they were made promptly and shared without delay. Everyone was highly responsive and available whenever I needed help, which made the overall process smooth and efficient.
+
+ 
+
+ 
+
+ 
+
+3.1      Contributions to Project:
+
+ 
+
+Following are my contributions in Data Science team project:
+
+ 
+
+For Task 1, guided the design team by suggesting page count, dashboard types, key features, and the overall look and feel of the web app.
+ 
+
+For task 2, reviewed all user stories and provided suggestions on which 4 to finalize based on clarity, feasibility, and alignment with project goals.
+ 
+
+For Task 3, we had a meeting with all of the team members to study and understand about these 5 points and how they lies on according to our webapp.
+ 
+
+For Task 4, implemented the /dashboard/patient route to display filtered diagnosis history for health workers, the /dashboard/health_worker route to dynamically load dashboard data for each health worker, the /new_patient route to manage form submission, validation, and image storage and the logout() route to manage user sessions and role-based redirection.
+ 
+
+For Task 4, designed and developed health_worker_dashboard.html for central navigation and role-specific access.
+ 
+
+For Task 4, created new_patient.html form to collect patient details and enable X-ray image uploads.
+ 
+
+For Task 4, developed and validated X-ray upload functionality using Flask to show
+diagnosis results.
+
+ 
+
+For Task 4, integrated a machine learning model for automated chest X-ray diagnosis.
+ 
+
+For Task 4, created patient_dashboard.html to present diagnoses and patient history in a clean layout.
+ 
+
+For Task 4, styled health_worker.css for consistent design and responsiveness across dashboard pages.
+ 
+
+For Task 4, applied styles in new_patient.css to enhance form layout, spacing, and usability.
+ 
+
+For Task 4, designed patient_dashboard.css to visually organize diagnosis data with a logical flow.
+ 
+
+For Task 4, ensured consistent layout and visual branding across all templates for better UX.
+ 
+
+For Task 4, customized form labels, inputs, and error messages for better clarity and accessibility.
+ 
+
+For Task 4, collaborated with Abdullah to set up the Flask app structure, project directories, implementing login and registration routes using session authentication.
+ 
+
+For Task 4, helped teammates in testing patient form and diagnosis logic using unit and manual tests.
+ 
+
+For Task 4, managed GitHub version control independently, resolving conflicts and merging all branches.
+ 
+
+For Task 4, guided team members on GitHub workflows, including branching, committing, and pull requests.
+ 
+
+For Task 5, I helped all the team members in making videos of testing and for highlighting the necessary features aligning our test cases.
+ 
+
+For Task 5, supported teammates in aligning their test cases with implemented features to ensure accurate testing.
+ 
+
+I’m truly grateful for everyone’s support, collaboration, and commitment throughout this journey. And I would love to work in the same team in future as well.
+
+ 
