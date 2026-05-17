@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis & Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recommendation.css') }}">
+</head>
+<body>
+
+    <header>
+        Diagnosis & Recommendations
+        <div class="logout">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- ✅ Patient Info -->
+        <div class="section-title">Patient Details</div>
+        <div class="details">
+            <p><strong>Name:</strong> {{ patient[1] }}</p>
+            <p><strong>Age:</strong> {{ patient[2] }}</p>
+            <p><strong>Symptoms:</strong> {{ patient[3] }}</p>
+            <p><strong>Contact:</strong> {{ patient[4] }}</p>
+            <p><strong>Diagnosis:</strong> {{ patient[6] }} ({{ patient[7] }}% Confidence)</p>
+            <p><strong>Status:</strong> {{ patient[8] }}</p>
+        </div>
+
+        <!-- ✅ X-ray Image -->
+        <div class="section-title">Uploaded Chest X-ray</div>
+        <div class="xray-section">
+            <img src="{{ url_for('static', filename='uploads/' + patient[5]) }}" alt="X-ray Image">
+        </div>
+
+        <!-- ✅ Recommendation Form -->
+        <div class="section-title">Doctor’s Recommendation</div>
+        <form method="POST" action="{{ url_for('recommendation', patient_id=patient[0]) }}" class="recommendation-form">
+            <textarea name="recommendation" placeholder="Enter your recommendation here..." required>{{ patient[9] }}</textarea>
+            <button type="submit">Save and Submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

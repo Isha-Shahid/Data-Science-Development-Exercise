@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Worker Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/health_worker.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}</h1>
+
+        <!-- ✅ Button to Add a New Patient -->
+        <div class="add-btn-container">
+    <a href="{{ url_for('new_patient') }}" class="add-patient-btn">➕ Add New Patient</a>
+</div>
+
+
+
+        <!-- ✅ Patients List -->
+        <h2>Patient Records</h2>
+        <div class="patients">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Symptoms</th>
+                    <th>Diagnosis</th>
+                    <th>Confidence</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                {% for patient in patients %}
+                <tr>
+                    <td>{{ patient[1] }}</td>
+                    <td>{{ patient[2] }}</td>
+                    <td>{{ patient[3] }}</td>
+                    <td>{{ patient[6] }}</td>
+                    <td>{{ patient[7] }}%</td>
+                    <td>
+                        {% if patient[8] == 'Pending' %}
+                            <span style="color: red; font-weight: bold;">Pending</span>
+                        {% elif patient[8] == 'Reviewed' %}
+                            <span style="color: green; font-weight: bold;">Reviewed</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('recommendation', patient_id=patient[0]) }}" class="review-button">Review</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div class="logout">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

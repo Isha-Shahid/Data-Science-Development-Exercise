@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Patient</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new_patient.css') }}">
+</head>
+<body>
+
+    <div class="form-box">
+        <h1 class="form-heading">Add New Patient</h1>
+
+        <form action="{{ url_for('new_patient') }}" method="POST" enctype="multipart/form-data" class="patient-form">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="symptoms">Symptoms:</label>
+            <input type="text" id="symptoms" name="symptoms" required>
+
+            <label for="contact">Contact Information:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="xray">Upload X-ray:</label>
+            <input type="file" id="xray" name="xray" accept="image/*" required>
+
+            <button type="submit" class="submit-btn">➕ Submit X-ray</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- templates/diagnosis_result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/diagnosis_result.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Diagnosis Result</h2>
+
+        <!-- Display X-ray -->
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded X-ray">
+        </div>
+
+        <!-- Show Prediction Result -->
+        <h3>{{ result_text }}</h3>
+        <p>Confidence: {{ confidence }}%</p>
+
+        <!-- Button to Send to Clinician -->
+        <button onclick="sendToClinician()" class="btn red-btn">Send to Clinician</button>
+    </div>
+
+    <script>
+        function sendToClinician() {
+            alert("Diagnosis sent to clinician successfully!");
+            window.location.href = "/dashboard/doctor";
+        }
+    </script>
+
+</body>
+</html>

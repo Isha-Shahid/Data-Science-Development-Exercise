@@ -1,0 +1,43 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Linking CSS files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login to Your Account</h2>
+
+        <form method="POST" action="{{ url_for('login') }}">
+            <!-- Dynamically setting role from URL parameters -->
+            <input type="hidden" name="role" value="{{ request.args.get('role', 'doctor') }}">
+
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+
+            <button type="submit" class="btn red-btn">Login as {{ request.args.get('role', 'doctor') }}</button>
+
+            <!-- Forgot Password Link -->
+            <a href="javascript:void(0);" class="forgot-password" onclick="forgotPassword()">Forgot Password?</a>
+        </form>
+    </div>
+
+    <script>
+        // ✅ Function for forgot password
+        function forgotPassword() {
+            alert("Visit clinic for password recovery.");
+        }
+    </script>
+
+</body>
+</html>

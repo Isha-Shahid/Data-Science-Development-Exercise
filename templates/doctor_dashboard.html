@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/doctor_dashboard.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logout-link">
+            <a href="{{ url_for('logout') }}" class="button">Logout</a>
+        </div>
+
+        <h1>Welcome, Dr. {{ username }}</h1>
+        <h2>Patient Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Symptoms</th>
+                    <th>Diagnosis</th>
+                    <th>Confidence Score</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for patient in patients %}
+                <tr>
+                    <td>{{ patient[1] }}</td> <!-- Name -->
+                    <td>{{ patient[2] }}</td> <!-- Age -->
+                    <td>{{ patient[3] }}</td> <!-- Symptoms -->
+                    <td>{{ patient[6] }}</td> <!-- Diagnosis -->
+                    <td>{{ patient[7] }}%</td> <!-- Confidence -->
+                    <td class="{{ 'status-reviewed' if patient[8] == 'Reviewed' else 'status-pending' }}">
+                        {{ patient[8] }}
+                    </td>
+                    <td>
+                        <a href="{{ url_for('recommendation', patient_id=patient[0]) }}" class="button">Review</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/doctor_dashboard.css') }}">

@@ -1,0 +1,49 @@
+/* static/css/diagnosis_result.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: darkred;
+}
+
+.image-container img {
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 24px;
+    color: #444;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    background-color: darkred;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #990000;
+}

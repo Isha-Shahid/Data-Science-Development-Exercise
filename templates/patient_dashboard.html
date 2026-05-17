@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #8b0000;
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        .button:hover {
+            background-color: #600000;
+        }
+        .details {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #8b0000;
+            color: white;
+        }
+        .logout {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logout a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #8b0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}</h1>
+
+        <!-- ✅ Patient Details -->
+        <h2>Your Details:</h2>
+        <div class="details">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>{{ patient_record[1] }}</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>{{ patient_record[2] }}</td>
+                </tr>
+                <tr>
+                    <th>Symptoms</th>
+                    <td>{{ patient_record[3] }}</td>
+                </tr>
+                <tr>
+                    <th>Diagnosis</th>
+                    <td>{{ patient_record[6] }} ({{ patient_record[7] }}% Confidence)</td>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>{{ patient_record[8] }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ✅ Doctor’s Recommendation -->
+        <h2>Doctor's Recommendation:</h2>
+        <p>{{ patient_record[9] if patient_record[9] else "Pending..." }}</p>
+
+        <!-- ✅ Logout Button -->
+        <div class="logout">
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

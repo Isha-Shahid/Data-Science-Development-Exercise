@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Selection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login as:</h2>
+        <form id="roleForm">
+            <select id="roleSelect">
+                <option value="doctor">Doctor</option>
+                <option value="health_worker">Health Worker</option>
+                <option value="patient">Patient</option>
+            </select>
+            <button type="button" class="btn" id="proceedButton">Proceed</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("proceedButton").addEventListener("click", function() {
+            let role = document.getElementById("roleSelect").value;
+            window.location.href = "/login?role=" + role;
+        });
+    </script>
+
+</body>
+</html>
